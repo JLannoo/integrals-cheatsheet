@@ -5,9 +5,9 @@ env:
 
 on:
   pull_request: 
-    branches: ["github-pages"]
+    branches: ["deploy"]
   push:
-    branches: ["github-pages"]
+    branches: ["deploy"]
 
 jobs:
   prevent_redundancy:
