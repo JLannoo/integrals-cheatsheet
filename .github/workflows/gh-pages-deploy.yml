@@ -17,7 +17,7 @@ jobs:
         uses: n1hility/cancel-previous-runs@v2
         with:
           token: ${{ github.token }}
-          workflow: dev-deploy.yml
+          workflow: gh-page-deploy.yml
 
   build_app:
     runs-on: ubuntu-latest
