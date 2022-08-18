@@ -1,5 +1,5 @@
 import "./Integrals.css";
-import json from "./Integrals.json";
+import json from "./integrals.json";
 import Latex from "react-latex";
 
 export default function Integrals(){
