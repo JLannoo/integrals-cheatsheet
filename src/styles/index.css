@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #222;
+    font-family: "Computer Modern", serif;
+    text-align: center;
+
+    background-color: #e2e2e2;
+    margin: 2rem;
+}
