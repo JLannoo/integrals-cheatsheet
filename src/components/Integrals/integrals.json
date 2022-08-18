@@ -1,0 +1,34 @@
+[
+    {
+        "input": "\\frac{1}{x}",
+        "output": "ln(x)"
+    },
+    {
+        "input": "x^a",
+        "output": "\\frac{x^{a+1}}{a+1}"
+    },
+    {
+        "input": "a^x",
+        "output": "\\frac{a^x}{ln(a)}"
+    },
+    {
+        "input": "\\frac{1}{x^a}",
+        "output": "-\\frac{x^{(1-a)}}{1-a}"
+    },
+    {
+        "input": "sin(x)",
+        "output": "-cos(x)"
+    },
+    {
+        "input": "cos(x)",
+        "output": "sin(x)"
+    },
+    {
+        "input": "tan(x)",
+        "output": "-ln|cos(x)|"
+    },
+    {
+        "input": "tan(x)",
+        "output": "ln|sec(x)|"
+    }
+]
