@@ -9,14 +9,14 @@ export default function Integrals({ baseurl }){
 
     return (
         <>
-            <div className="integrals-title">
+            <div className="integrals-title no-print">
                 <h3>Let <i>x</i> be a variable, C and a arbitrary constants:</h3>
             </div>
             <main className="integrals">
                 {json.map((integral , index) => (
                     <div className="integral" key={index}>
                         <Latex displayMode>{`$$${index+1}. \\int ${integral.input} dx = ${integral.output} + C$$`}</Latex>
-                        <div className="links">
+                        <div className="links no-print">
                             <a title="Search in WolframAlpha" ref="nonreferrer" target="_blank" href={`https://www.wolframalpha.com/input?i=${getURLIntegral(integral.input)}`}>
                                 <img className="logo wolfram" src={baseurl + "WolframAlpha.svg"} alt="Link to integral in WolframAlpha" />
                             </a>

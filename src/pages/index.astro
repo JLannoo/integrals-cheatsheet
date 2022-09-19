@@ -3,6 +3,7 @@ import '../styles/index.css';
 
 import Title from '../components/Title/Title';
 import Integrals from '../components/Integrals/Integrals';
+import Footer from "../components/Footer/Footer";
 ---
 
 <html>
@@ -31,5 +32,6 @@ import Integrals from '../components/Integrals/Integrals';
 	<body>
 		<Title />
 		<Integrals baseurl={Astro.url}/>
+		<Footer client:idle/>
 	</body>
 </html>
