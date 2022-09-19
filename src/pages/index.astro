@@ -3,10 +3,20 @@ import '../styles/index.css';
 
 import Title from '../components/Title/Title';
 import Integrals from '../components/Integrals/Integrals';
+import Footer from "../components/Footer/Footer";
 ---
 
 <html>
 	<meta charset="utf-8" />
+	<title>Integrals Cheatsheet | JLannoo</title>
+	<meta name="description" content="Do you want some integrals? Here you go! Also, print them if you want" />
+	
+	<meta name="og:title" property="og:title" content="Integrals Cheatsheet | JLannoo" />
+	<meta name="og:description" property="og:description" content="Do you want some integrals? Here you go! Also, print them if you want" />
+	<meta name="og:image" property="og:image" content={`${Astro.url}ogimage.png`} />
+	<meta name="og:url" property="og:url" content={`${Astro.url}`} />
+	<meta name="og:type" property="og:type" content="website" />
+
 	<link rel="icon" href={`${Astro.url}favicon.ico`} />
 	<style>
 		@font-face {
@@ -22,5 +32,6 @@ import Integrals from '../components/Integrals/Integrals';
 	<body>
 		<Title />
 		<Integrals baseurl={Astro.url}/>
+		<Footer client:idle/>
 	</body>
 </html>
