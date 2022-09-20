@@ -1,0 +1,33 @@
+---
+
+import "./Integrals.css";
+import json from "./integrals.json";
+import AstroKatex from "astro-katex/AstroKatex.astro";
+
+
+const getURLIntegral = (integral: string) => {
+    return `int+${integral}+dx`;
+}
+
+--- 
+
+<div class="integrals-title no-print">
+    <h3>Let <i>x</i> be a variable, C and a arbitrary constants:</h3>
+</div>
+<main class="integrals">
+    {json.map((integral , index) => (
+        <div class="integral">
+            <AstroKatex>
+                \[ {index+1}. \int {integral.input} dx = {integral.output} + C \]
+            </AstroKatex>
+            <div class="links no-print">
+                <a title="Search in WolframAlpha" href="nonreferrer" target="_blank" href={`https://www.wolframalpha.com/input?i=${getURLIntegral(integral.input)}`}>
+                    <img class="logo wolfram" src={Astro.url + "WolframAlpha.svg"} alt="Link to integral in WolframAlpha" />
+                </a>
+                <a title="Search in WolfreeAlpha" href="nonreferrer" target="_blank" href={`https://wolfreealpha.github.io/input?i=${getURLIntegral(integral.input)}&lang=en&wolfree_input=${getURLIntegral(integral.input)}&wolfree_i2d=&wolfree_podstate=`}>
+                    <img class="logo wolfree" src={Astro.url + "WolframAlpha.svg"} alt="Link to integral in WolframAlpha" />
+                </a>
+            </div>
+        </div>
+    ))}
+</main>
