@@ -5,5 +5,6 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [react()],
-  site: "https://integrals.jlannoo.dev",
+  site: "https://jlannoo.github.io",
+  base: "/integrals-cheatsheet",
 });
