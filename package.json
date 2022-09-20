@@ -10,13 +10,10 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/react": "^1.0.0",
-    "astro": "^1.0.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "astro": "^1.0.6"
   },
   "dependencies": {
-    "prop-types": "^15.8.1",
-    "react-latex": "^2.0.0"
+    "astro-katex": "^1.0.5",
+    "katex": "^0.16.2"
   }
 }
