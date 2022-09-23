@@ -62,6 +62,7 @@ jobs:
         with:
           target_branch: github-pages
           build_dir: dist
+          fqdn: integrals.jlannoo.dev
         env:
           GITHUB_TOKEN: ${{ github.token }}
 
