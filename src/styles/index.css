@@ -27,7 +27,12 @@ body {
         padding: 0;
     }
 
-    .integrals {
+    .integral-category{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .integral-group {
         gap: 0.2rem !important;
         break-inside: avoid !important;
         padding: 0 !important;

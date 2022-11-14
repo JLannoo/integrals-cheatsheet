@@ -1,14 +1,23 @@
-.integrals {
+.integral-category {
+    margin-bottom: 2rem;
+
+    padding-inline: 3rem;
+    break-inside: avoid-page;
+}
+
+.integral-category .category-title {
+    margin: 0;
+    padding: 0;
+}
+
+.integral-group {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(45ch, 1fr));
 
     gap: 2rem;
-    margin-bottom: 2rem;
-
-    padding-inline: 3rem;
 }
 
-.integrals .integral {
+.integral-group .integral {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -16,7 +25,7 @@
     flex: 1 1 300px;
 }
 
-.integrals .integral .links {
+.integral-group .integral .links {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,14 +37,14 @@
     transition: opacity 0.3s ease-in-out;
 }
 
-.integrals .integral:hover .links {
+.integral-group .integral:hover .links {
     opacity: 1;
 }
 
-.integrals .integral .links .logo {
+.integral-group .integral .links .logo {
     width: 1.3rem;
 }
 
-.integrals .integral .links .wolfree {
+.integral-group .integral .links .wolfree {
     filter: hue-rotate(180deg);
 }
