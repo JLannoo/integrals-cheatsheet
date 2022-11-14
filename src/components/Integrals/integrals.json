@@ -18,33 +18,6 @@
         }
     ],
 
-    "Reciprocals": [
-        {
-            "input": "\\frac{1}{a^2+x^2}",
-            "output": "\\frac{1}{a} arctan\\Big(\\frac{x}{a}\\Big)"
-        },
-        {
-            "input": "\\frac{1}{a^2+x^2}",
-            "output": "\\frac{1}{a} ln(a^2+x^2)"
-        },
-        {
-            "input": "\\frac{1}{1-x^2}",
-            "output": "\\frac{ln|u+1|-ln|u-1|}{2}"
-        },
-        {
-            "input": "\\frac{1}{a^2-x^2}",
-            "output": "\\frac{1}{2a} ln\\Bigg|\\frac{x+a}{x-a}\\Bigg|"
-        },
-        {
-            "input": "\\frac{1}{x^2-a^2}",
-            "output": "\\frac{1}{2a} ln\\Bigg|\\frac{x-a}{x+a}\\Bigg|"
-        },
-        {
-            "input": "\\frac{1}{\\sqrt{a^2+u^2}}",
-            "output": "ln(u+\\sqrt{a^2+x^2})"
-        }
-    ],
-
     "Trigonometrics": [
         {
             "input": "sin(x)",
@@ -121,6 +94,33 @@
         {
             "input": "\\frac{1}{tan^3(x)}",
             "output": "\\frac{tan^2(x)}{2} - ln|sin(x)|"
+        }
+    ],
+
+    "Reciprocals": [
+        {
+            "input": "\\frac{1}{a^2+x^2}",
+            "output": "\\frac{1}{a} arctan\\Big(\\frac{x}{a}\\Big)"
+        },
+        {
+            "input": "\\frac{1}{a^2+x^2}",
+            "output": "\\frac{1}{a} ln(a^2+x^2)"
+        },
+        {
+            "input": "\\frac{1}{1-x^2}",
+            "output": "\\frac{ln|u+1|-ln|u-1|}{2}"
+        },
+        {
+            "input": "\\frac{1}{a^2-x^2}",
+            "output": "\\frac{1}{2a} ln\\Bigg|\\frac{x+a}{x-a}\\Bigg|"
+        },
+        {
+            "input": "\\frac{1}{x^2-a^2}",
+            "output": "\\frac{1}{2a} ln\\Bigg|\\frac{x-a}{x+a}\\Bigg|"
+        },
+        {
+            "input": "\\frac{1}{\\sqrt{a^2+u^2}}",
+            "output": "ln(u+\\sqrt{a^2+x^2})"
         }
     ]
 }
