@@ -24,6 +24,10 @@
         "output": "ln\\Bigg|\\frac{1}{sin(x)} - \\frac{cos(x)}{sin(x)}\\Bigg|"
     },
     {
+        "input": "sin(ax)sin(bx)",
+        "output": "\\frac{sin(a-b)x}{2(a-b)} - \\frac{sin(a+b)x}{2(a+b)}"
+    },
+    {
         "input": "sin^2(x)",
         "output": "\\frac{1}{2}x - \\frac{1}{4}sin(2x)"
     },
@@ -38,6 +42,10 @@
     {
         "input": "\\frac{1}{cos(x)}",
         "output": "ln|sec(x)+tan(x)|"
+    },
+    {
+        "input": "cos(ax)cos(bx)",
+        "output": "\\frac{sin(a-b)x}{2(a-b)} + \\frac{sin(a+b)x)}{2(a+b)}"
     },
     {
         "input": "cos^2(x)",
