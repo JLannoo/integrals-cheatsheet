@@ -13,20 +13,30 @@ body {
 
 
 @media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
 
     .title {
         margin-bottom: 1rem;
     }
     .title h1 {
         font-size: 2rem !important;
+        margin: 0 !important;
+        padding: 0;
     }
 
     .integrals {
-        gap: 0.45rem !important;
+        gap: 0.2rem !important;
         break-inside: avoid !important;
+        padding: 0 !important;
+        grid-template-columns: 1fr 1fr !important;
+
+        margin-bottom: 0 !important;
     }
     .integral {
-        font-size: 1rem !important;
+        font-size: 0.75rem !important;
         break-inside: avoid !important;
         justify-content: flex-start !important;
     }

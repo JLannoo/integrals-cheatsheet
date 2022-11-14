@@ -1,16 +1,17 @@
 .integrals {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45ch, 1fr));
+
     gap: 2rem;
     margin-bottom: 2rem;
+
+    padding-inline: 3rem;
 }
 
 .integrals .integral {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     flex: 1 1 300px;
 }
