@@ -49,7 +49,7 @@
         },
         {
             "input": "cos(ax)cos(bx)",
-            "output": "\\frac{sin(a-b)x}{2(a-b)} + \\frac{sin(a+b)x)}{2(a+b)}"
+            "output": "\\frac{sin(a-b)x}{2(a-b)} + \\frac{sin(a+b)x}{2(a+b)}"
         },
         {
             "input": "cos^2(x)",
@@ -65,7 +65,7 @@
         },
         {
             "input": "sin^2(x)cos^2(x)",
-            "output": "\\frac{1}{32}\\Big(4x-sin(4x))\\Big)"
+            "output": "\\frac{1}{32}\\Big(4x-sin(4x)\\Big)"
         },
         {
             "input": "tan(x)",
@@ -103,7 +103,7 @@
             "output": "\\frac{1}{a} arctan\\Big(\\frac{x}{a}\\Big)"
         },
         {
-            "input": "\\frac{1}{a^2+x^2}",
+            "input": "\\frac{1}{x^2-a^2}",
             "output": "\\frac{1}{a} ln(a^2+x^2)"
         },
         {
