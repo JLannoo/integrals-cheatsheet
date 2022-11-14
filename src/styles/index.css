@@ -28,6 +28,7 @@ body {
     .integral {
         font-size: 1rem !important;
         break-inside: avoid !important;
+        justify-content: flex-start !important;
     }
 
     .no-print {
