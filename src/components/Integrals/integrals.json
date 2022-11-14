@@ -1,118 +1,126 @@
-[
-    {
-        "input": "\\frac{1}{x}",
-        "output": "ln(x)"
-    },
-    {
-        "input": "x^a",
-        "output": "\\frac{x^{a+1}}{a+1}"
-    },
-    {
-        "input": "a^x",
-        "output": "\\frac{a^x}{ln(a)}"
-    },
-    {
-        "input": "\\frac{1}{x^a}",
-        "output": "-\\frac{x^{(1-a)}}{1-a}"
-    },
-    {
-        "input": "sin(x)",
-        "output": "-cos(x)"
-    },
-    {
-        "input": "\\frac{1}{sin(x)}",
-        "output": "ln\\Bigg|\\frac{1}{sin(x)} - \\frac{cos(x)}{sin(x)}\\Bigg|"
-    },
-    {
-        "input": "sin(ax)sin(bx)",
-        "output": "\\frac{sin(a-b)x}{2(a-b)} - \\frac{sin(a+b)x}{2(a+b)}"
-    },
-    {
-        "input": "sin^2(x)",
-        "output": "\\frac{1}{2}x - \\frac{1}{4}sin(2x)"
-    },
-    {
-        "input": "sin^3(x)",
-        "output": "\\frac{1}{12}\\Big(cos(3x)-9cos(x)\\Big)"
-    },
-    {
-        "input": "cos(x)",
-        "output": "sin(x)"
-    },
-    {
-        "input": "\\frac{1}{cos(x)}",
-        "output": "ln|sec(x)+tan(x)|"
-    },
-    {
-        "input": "cos(ax)cos(bx)",
-        "output": "\\frac{sin(a-b)x}{2(a-b)} + \\frac{sin(a+b)x)}{2(a+b)}"
-    },
-    {
-        "input": "cos^2(x)",
-        "output": "\\frac{1}{2}x + \\frac{1}{4}sin(2x)"
-    },
-    {
-        "input": "cos^3(x)",
-        "output": "\\frac{1}{12}\\Big(9sin(x)+sin(3x)\\Big)"
-    },
-    {
-        "input": "sin(x)cos(x)",
-        "output": "-\\frac{cos^2(x)}{2}"
-    },
-    {
-        "input": "sin^2(x)cos^2(x)",
-        "output": "\\frac{1}{32}\\Big(4x-sin(4x))\\Big)"
-    },
-    {
-        "input": "tan(x)",
-        "output": "-ln|cos(x)|"
-    },
-    {
-        "input": "tan(x)",
-        "output": "ln|sec(x)|"
-    },
-    {
-        "input": "tan^2(x)",
-        "output": "tan(x)-x"
-    },
-    {
-        "input": "tan^3(x)",
-        "output": "\\frac{tan^2(x)}{2} + ln|cos(x)|"
-    },
-    {
-        "input": "\\frac{1}{tan(x)}",
-        "output": "ln|sin(x)|"
-    },
-    {
-        "input": "\\frac{1}{tan^2(x)}",
-        "output": "-\\frac{1}{tan(x)}-x"
-    },
-    {
-        "input": "\\frac{1}{tan^3(x)}",
-        "output": "\\frac{tan^2(x)}{2} - ln|sin(x)|"
-    },
-    {
-        "input": "\\frac{1}{a^2+x^2}",
-        "output": "\\frac{1}{a} arctan\\Big(\\frac{x}{a}\\Big)"
-    },
-    {
-        "input": "\\frac{1}{a^2+x^2}",
-        "output": "\\frac{1}{a} ln(a^2+x^2)"
-    },
-    {
-        "input": "\\frac{1}{1-x^2}",
-        "output": "\\frac{ln|u+1|-ln|u-1|}{2}"
-    },
-    {
-        "input": "\\frac{1}{a^2-x^2}",
-        "output": "\\frac{1}{2a} ln\\Bigg|\\frac{x+a}{x-a}\\Bigg|"
-    },
-    {
-        "input": "\\frac{1}{x^2-a^2}",
-        "output": "\\frac{1}{2a} ln\\Bigg|\\frac{x-a}{x+a}\\Bigg|"
-    },
-    {
-        "input": "\\frac{1}{\\sqrt{a^2+u^2}}",
-        "output": "ln(u+\\sqrt{a^2+x^2})"
-    }
-]
+{
+    "Powers": [
+        {
+            "input": "\\frac{1}{x}",
+            "output": "ln(x)"
+        },
+        {
+            "input": "x^a",
+            "output": "\\frac{x^{a+1}}{a+1}"
+        },
+        {
+            "input": "a^x",
+            "output": "\\frac{a^x}{ln(a)}"
+        },
+        {
+            "input": "\\frac{1}{x^a}",
+            "output": "-\\frac{x^{(1-a)}}{1-a}"
+        }
+    ],
+
+    "Reciprocals": [
+        {
+            "input": "\\frac{1}{a^2+x^2}",
+            "output": "\\frac{1}{a} arctan\\Big(\\frac{x}{a}\\Big)"
+        },
+        {
+            "input": "\\frac{1}{a^2+x^2}",
+            "output": "\\frac{1}{a} ln(a^2+x^2)"
+        },
+        {
+            "input": "\\frac{1}{1-x^2}",
+            "output": "\\frac{ln|u+1|-ln|u-1|}{2}"
+        },
+        {
+            "input": "\\frac{1}{a^2-x^2}",
+            "output": "\\frac{1}{2a} ln\\Bigg|\\frac{x+a}{x-a}\\Bigg|"
+        },
+        {
+            "input": "\\frac{1}{x^2-a^2}",
+            "output": "\\frac{1}{2a} ln\\Bigg|\\frac{x-a}{x+a}\\Bigg|"
+        },
+        {
+            "input": "\\frac{1}{\\sqrt{a^2+u^2}}",
+            "output": "ln(u+\\sqrt{a^2+x^2})"
+        }
+    ],
+
+    "Trigonometrics": [
+        {
+            "input": "sin(x)",
+            "output": "-cos(x)"
+        },
+        {
+            "input": "\\frac{1}{sin(x)}",
+            "output": "ln\\Bigg|\\frac{1}{sin(x)} - \\frac{cos(x)}{sin(x)}\\Bigg|"
+        },
+        {
+            "input": "sin(ax)sin(bx)",
+            "output": "\\frac{sin(a-b)x}{2(a-b)} - \\frac{sin(a+b)x}{2(a+b)}"
+        },
+        {
+            "input": "sin^2(x)",
+            "output": "\\frac{1}{2}x - \\frac{1}{4}sin(2x)"
+        },
+        {
+            "input": "sin^3(x)",
+            "output": "\\frac{1}{12}\\Big(cos(3x)-9cos(x)\\Big)"
+        },
+        {
+            "input": "cos(x)",
+            "output": "sin(x)"
+        },
+        {
+            "input": "\\frac{1}{cos(x)}",
+            "output": "ln|sec(x)+tan(x)|"
+        },
+        {
+            "input": "cos(ax)cos(bx)",
+            "output": "\\frac{sin(a-b)x}{2(a-b)} + \\frac{sin(a+b)x)}{2(a+b)}"
+        },
+        {
+            "input": "cos^2(x)",
+            "output": "\\frac{1}{2}x + \\frac{1}{4}sin(2x)"
+        },
+        {
+            "input": "cos^3(x)",
+            "output": "\\frac{1}{12}\\Big(9sin(x)+sin(3x)\\Big)"
+        },
+        {
+            "input": "sin(x)cos(x)",
+            "output": "-\\frac{cos^2(x)}{2}"
+        },
+        {
+            "input": "sin^2(x)cos^2(x)",
+            "output": "\\frac{1}{32}\\Big(4x-sin(4x))\\Big)"
+        },
+        {
+            "input": "tan(x)",
+            "output": "-ln|cos(x)|"
+        },
+        {
+            "input": "tan(x)",
+            "output": "ln|sec(x)|"
+        },
+        {
+            "input": "tan^2(x)",
+            "output": "tan(x)-x"
+        },
+        {
+            "input": "tan^3(x)",
+            "output": "\\frac{tan^2(x)}{2} + ln|cos(x)|"
+        },
+        {
+            "input": "\\frac{1}{tan(x)}",
+            "output": "ln|sin(x)|"
+        },
+        {
+            "input": "\\frac{1}{tan^2(x)}",
+            "output": "-\\frac{1}{tan(x)}-x"
+        },
+        {
+            "input": "\\frac{1}{tan^3(x)}",
+            "output": "\\frac{tan^2(x)}{2} - ln|sin(x)|"
+        }
+    ]
+}
