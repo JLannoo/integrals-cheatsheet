@@ -18,23 +18,25 @@ const getURLIntegral = (integral: string) => {
 </div>
 <main class="integrals">
     {Object.keys(JSONInput).map((category) => 
-        <h3 class="group-title">{category}</h3>
-        <section class="integral-group">
-            {JSONInput[category].map((integral , index) => 
-                <div class="integral">
-                    <AstroKatex>
-                        \[ {index+1}. \int {integral.input} dx = {integral.output} + C \]
-                    </AstroKatex>
-                    <div class="links no-print">
-                        <a title="Search in WolframAlpha" target="_blank" rel="nonreferrer" href={`https://www.wolframalpha.com/input?i=${getURLIntegral(integral.input)}`}>
-                            <img class="logo wolfram" src={Astro.url + "WolframAlpha.svg"} alt="Link to integral in WolframAlpha" />
-                        </a>
-                        <a title="Search in WolfreeAlpha" target="_blank" rel="nonreferrer" href={`https://wolfreealpha.gitlab.io/input?i=${getURLIntegral(integral.input)}&lang=en&wolfree_input=${getURLIntegral(integral.input)}&wolfree_i2d=&wolfree_podstate=`}>
-                            <img class="logo wolfree" src={Astro.url + "WolframAlpha.svg"} alt="Link to integral in WolframAlpha" />
-                        </a>
+        <section class="integral-category">
+            <h3 class="category-title">{category}</h3>
+            <div class="integral-group">
+                {JSONInput[category].map((integral , index) =>
+                    <div class="integral">
+                        <AstroKatex>
+                            \[ {index+1}. \int {integral.input} dx = {integral.output} + C \]
+                        </AstroKatex>
+                        <div class="links no-print">
+                            <a title="Search in WolframAlpha" target="_blank" rel="nonreferrer" href={`https://www.wolframalpha.com/input?i=${getURLIntegral(integral.input)}`}>
+                                <img class="logo wolfram" src={Astro.url + "WolframAlpha.svg"} alt="Link to integral in WolframAlpha" />
+                            </a>
+                            <a title="Search in WolfreeAlpha" target="_blank" rel="nonreferrer" href={`https://wolfreealpha.gitlab.io/input?i=${getURLIntegral(integral.input)}&lang=en&wolfree_input=${getURLIntegral(integral.input)}&wolfree_i2d=&wolfree_podstate=`}>
+                                <img class="logo wolfree" src={Astro.url + "WolframAlpha.svg"} alt="Link to integral in WolframAlpha" />
+                            </a>
+                        </div>
                     </div>
-                </div>
-            )}
+                )}
+            </div>
         </section>
     )}
 </main>
